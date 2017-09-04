@@ -1,15 +1,15 @@
 pyg = 'ay'
 
-print "Welcome to my Pig Latin translator!/n"
+print("Welcome to my Pig Latin translator!/n")
 
-original = raw_input("Enter a word, any word:") 
+original = input("Enter a word, any word:")
 
 if len(original) > 0 and original.isalpha() == True:
-    print original
+    print(original)
     word = original.lower()
     last_letter = word[0]
     pig_word = word + last_letter + pyg
     pig_word = pig_word[1:]
-    print pig_word
+    print(pig_word)
 else:
-    print "Try again."
+    print("Try again.")
